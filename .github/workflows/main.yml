@@ -26,7 +26,7 @@ jobs:
         run: |
           python3 checkin.py
         env: 
-          COOKIE: "${{ secrets.COOKIE }}"
-          SCKEY: "${{ secrets.SCKEY }}"
-          SERVE: "${{secrets.SERVE}}"
+          "COOKIE": "${{ secrets.COOKIE }}"
+          "SCKEY": "${{ secrets.SCKEY }}"
+          "SERVE": "${{secrets.SERVE}}"
       - uses: gautamkrishnar/keepalive-workflow@master  
