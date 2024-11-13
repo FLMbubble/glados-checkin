@@ -23,6 +23,7 @@ def start():
 
     if 'message' in checkin.text:
         mess = checkin.json()['message']
+        print("check state:{}".format(state.json()))
         time = state.json()['data']['leftDays']
         time = time.split('.')[0]
         #print(time)
